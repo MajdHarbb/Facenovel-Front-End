@@ -1,0 +1,219 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Questrial', sans-serif;
+  }
+  
+.logo-search img {
+  height: 40px;
+}
+
+.profile-pic {
+  border-radius: 50%;
+  width: 45px;
+}
+
+.navbar {
+  padding: 15px 20px;
+  display: flex;
+  justify-content: space-between;
+  position: sticky;
+  background-color: white;
+  z-index: 100;
+  top: 0;
+  box-shadow: 0 5px 8px -9px rgba(0, 0, 0, 0.75);
+}
+
+.logo-search {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.search-input {
+  display: flex;
+  align-items: center;
+  background-color: #eff2f5;
+  padding: 10px;
+  margin-left: 50px;
+  border-radius: 999px;
+  width: 800px;
+}
+
+.search-input input {
+  border: none;
+  background-color: transparent;
+  outline-width: 0;
+  width: 800px;
+  
+}
+
+.user-info {
+  display: flex;
+  align-items: center;
+}
+
+.user-info h4 {
+  margin-left: 10px;
+}
+
+.info {
+  display: flex;
+  align-items: center;
+}
+
+.info .material-icons {
+  color: white;
+  font-size:30px;
+  padding: 5px;
+  background-color: #2b69ee;
+  margin: 0 10px;
+  border-radius: 15px;
+}
+
+.info .material-icons:hover {
+  cursor: pointer;
+}
+
+@media (max-width: 640px) {
+    .cover-photo {
+      width:100%;
+    }
+}
+
+/* Create three equal columns that floats next to each other */
+.column1 {
+    float: left;
+    width: 20%;
+    padding: 10px;
+    height: auto; /* Should be removed. Only for demonstration */
+  }
+  .column2 {
+    float: left;
+    width: 80%;
+    padding: 10px;
+    height: auto; /* Should be removed. Only for demonstration */
+  }
+
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  .profile-pic-large{
+    
+    width: 200px;
+    height: 200px;
+    border: 10px #2b69ee solid;
+    border-radius: 200px;
+  }
+  .col1-content{
+    text-align: center;
+    margin-top: 10%;
+  }
+  .texts{
+      margin: 5%;
+  }
+  .btn {
+    padding: 10px;
+    background-color: #2b69ee;
+    color: white;
+    border: 1px solid white;
+    border-radius: 5px;
+    width: fit-content;
+  }
+
+  table {
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  th, td {
+    padding: 8px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+  }
+  .material-icons{
+    cursor: pointer
+  }
+  img{
+    cursor: pointer;
+}
+  /* The Modal (background) */
+.modal {
+  display: none ; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 20%; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  border-radius: 20px;
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+  
+  background-color: #fefefe;
+  margin: auto;
+  padding: 0;
+  border: 1px solid #888;
+  width: 50%;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+  -webkit-animation-name: animatetop;
+  -webkit-animation-duration: 0.4s;
+  animation-name: animatetop;
+  animation-duration: 0.4s
+}
+
+/* Add Animation */
+@-webkit-keyframes animatetop {
+  from {top:-300px; opacity:0} 
+  to {top:0; opacity:1}
+}
+
+@keyframes animatetop {
+  from {top:-300px; opacity:0}
+  to {top:0; opacity:1}
+}
+
+/* The Close Button */
+.close {
+  color: white;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.modal-header {
+  padding: 15px;
+  background-color: #2b69ee;
+  color: white;
+}
+
+.modal-body {padding: 10px;}
+
+.modal-footer {
+  padding: 10px;
+  background-color: #2b69ee;
+  color: white;
+}
+#save-changes{
+  padding: 10px;
+  background-color: white;
+  border: 1px solid black;
+  border-radius: 5px;
+}

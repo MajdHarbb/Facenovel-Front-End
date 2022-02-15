@@ -1,0 +1,113 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Questrial', sans-serif;
+    background-color: #f0f2f5;
+    margin: auto;
+}
+.h1{
+    left: 10%;
+    top: 40%;
+    width: 550px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.material-icons{
+    cursor: pointer
+  }
+.h{
+    font-size: 60px;
+    margin-bottom: 5px;
+    color: #1877f2;
+}
+.msg{
+    font-size: 30px;
+}
+.form{
+    
+    background-color: #ffff;
+    width: 420px;
+    height: 420px;
+    left: 55%;
+    top: 20%;
+    border-radius: 10px;
+    box-shadow: 2px 2px 9px rgb(184, 184, 184),
+                -1px -1px 5px rgb(184, 184, 184);
+}
+.input{
+    margin: 10px;
+    margin-top: 20px;
+    padding: 20px;
+    width: 85%;
+    background-color: #ffff;
+    outline: none;
+    border: 1px solid rgb(184, 184, 184);
+    border-radius: 5px;
+    font-size: 15px; 
+      
+}
+.input:focus{
+    border: 1px solid #1877f2;
+    box-shadow: 1px 1px 1px #1877f2,
+                -1px -1px 1px #1877f2;
+}
+.login-btn{
+   
+    margin: 10px ;
+    padding: 15px;
+    width: 95%;
+    border-radius: 5px;
+    background-color: #1877f2;
+    color: #ffff;
+    font-size: 20px;
+    border: none;
+    font-weight: bolder;
+
+}
+
+
+.ca{
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 95px;
+    width: 50%;
+    
+    margin-bottom: 20px;
+    padding: 15px;
+    background-color: #42b72a;
+    border-radius: 5px;
+}
+.create-btn{
+    text-decoration: none;
+    background: none;
+    color: #ffff;
+    font-weight: bolder;
+    font-size: 17px;
+    
+}
+
+.no-account{
+    font-family: 'Questrial', sans-serif;
+    color: rgb(26, 24, 24);
+    font-size: 15px;
+    text-align: center;
+    padding-top: 5px;
+    border-top: 1px solid lightslategrey;
+    background-color: white;
+}
+.no{
+    text-align: center;
+    background-color: white;
+    width: 100%;
+    
+    margin-top: 10px;
+    margin-bottom: 5px;
+    border-radius: 5px;
+}
+.inputs{
+    background-color: white;
+}
+img{
+    cursor: pointer;
+}
