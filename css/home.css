@@ -40,14 +40,12 @@
   padding: 10px;
   margin-left: 50px;
   border-radius: 999px;
-  width: 800px;
 }
 
 .search-input input {
   border: none;
   background-color: transparent;
   outline-width: 0;
-  width: 800px;
 }
 
 .user-info {
@@ -65,10 +63,9 @@
 }
 
 .info .material-icons {
-  color: white;
+  color: #2b69ee;
   font-size: 30px;
   padding: 5px;
-  background-color: #2b69ee;
   margin: 0 10px;
   border-radius: 15px;
 }
@@ -90,10 +87,10 @@
   display: flex;
   justify-content: center;
   margin: auto;
-  width: 200px;
-  height: 200px;
-  border: 10px #2b69ee solid;
-  border-radius: 200px;
+  width: 100px;
+  height: 100px;
+  border: 5px #2b69ee solid;
+  border-radius: 150px;
   margin-top: 3%;
 }
 
@@ -114,7 +111,9 @@
   float: left;
   width: 20%;
   padding: 10px;
-  height: 100%; /* Should be removed. Only for demonstration */
+  height: 100vh; /* Should be removed. Only for demonstration */
+  
+
 }
 
 /* Clear floats after the columns */
@@ -300,9 +299,7 @@
     cursor: pointer;
 }
 
-.post .post-bottom .action:hover{
-    background:#eee;
-}
+
 
 .info-column ul{
     padding:10px 0px;
@@ -340,6 +337,8 @@ a{
 .friends-panel{
   border-left: 1px solid black;
   margin-bottom: 0;
+    display: flex;
+    align-items: center;
 
 }
 .friends-btn{
@@ -360,3 +359,262 @@ a{
   background-color: #2b69ee;
   color: white;
 }
+ /* The Modal (background) */
+ .modal {
+  display: none ; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 20%; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  border-radius: 20px;
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+  
+  background-color: #fefefe;
+  margin: auto;
+  padding: 0;
+  border: 1px solid #888;
+  border-radius: 20px;
+  width: 50%;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+  -webkit-animation-name: animatetop;
+  -webkit-animation-duration: 0.4s;
+  animation-name: animatetop;
+  animation-duration: 0.4s
+}
+
+/* Add Animation */
+@-webkit-keyframes animatetop {
+  from {top:-300px; opacity:0} 
+  to {top:0; opacity:1}
+}
+
+@keyframes animatetop {
+  from {top:-300px; opacity:0}
+  to {top:0; opacity:1}
+}
+
+/* The Close Button */
+.close {
+  color: white;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.modal-header {
+  padding: 15px;
+  background-color: #2b69ee;
+  color: white;
+  border-radius: 20px;
+}
+
+.modal-body {padding: 10px;}
+
+.modal-footer {
+  padding: 10px;
+  background-color: #2b69ee;
+  color: white;
+}
+#save-changes{
+  padding: 10px;
+  background-color: white;
+  border: 1px solid black;
+  border-radius: 5px;
+}
+
+.friends-section {
+    
+    display: flex;
+    
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+    font-size: 17px;
+    padding: 5px;
+    background-color: white;
+    margin: 2%;
+    border-radius: 10px;
+}
+
+.friends-section img{
+    margin-right: 20px;
+    width: 40px;
+    height: 40px;
+}
+
+.friends-modal{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.friend-btn{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 8px;
+  width: 170px;
+  cursor: pointer;
+  
+}
+.dropbtn {
+  padding: 0;
+  font-size: 0px;
+  border: none;
+  cursor: pointer;
+  background-color: white;
+}
+
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  overflow: auto;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown a:hover {background-color: #ddd;}
+
+.show {display: block;}
+#fb{
+  width:500px;
+  border:1px solid gray;
+  border-radius:5px;
+  position:relative;
+  height:175px;
+}
+#fb p{
+  font-family:sans-serif;
+  margin: 0 0 0 10px;
+  line-height:30px;
+}
+
+#fb-top span{
+  color:#4267B2;
+  float:right;
+  margin-right:10px;
+}
+#fb-top{
+  background-color:#efefef;
+  height:30px;
+  width:500px;
+  border-radius:5px 5px 0 0;
+  position:absolute;
+  top:-1px;
+  left:-1px;
+  border:1px solid gray;
+}
+
+#fb img{
+  position:absolute;
+  left:10px;
+  top:52.5px;
+}
+
+#info{
+  position:absolute;
+  left:120px;
+  top:75px;
+}
+
+#info {
+  color:#4267B2;
+  line-height:25px;
+  font-size:18px;
+}
+
+#info span{
+  color:#777;
+  font-size:14px;
+}
+
+#button-block{
+  position:absolute;
+  right:10px;
+  top:85px;
+}
+
+#button-block div{
+  display:inline-block;
+}
+
+#confirm, #delete{
+  background-color:#4267B2;
+  color:white;
+  padding:7px;
+  border-radius:2px;
+  margin-right:10px;
+  font-family:sans-serif;
+}
+
+#delete{
+  color:#222;
+  background-color:#bbb;
+  border:1px solid #999;
+  padding:6px;
+  margin-right:0;
+}
+
+#button-block div:hover{
+  opacity:.8;
+  cursor:pointer;
+}
+.not-req{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 300px;
+  padding: 10px;
+
+}
+.confirm{
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px solid white;
+  background-color: #2b69ee;
+  color: white;
+
+}
+
+.delete{
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px solid #2b69ee;
+  background-color: white;
+  color: #2b69ee;
+
+}
+
+
+
+
