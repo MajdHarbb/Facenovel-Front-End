@@ -10,50 +10,45 @@
 </head>
 
 <body>
-    <div class="mydiv">
-        <div class="h1">
-            <h1 class="h">facebook</h1>
-            <p class="msg">Facebook helps you connect and share with the people in your life.</p>
+    <div class="h1">
+        <h1 class="h">facebook</h1>
+        <p class="msg">Facebook helps you connect and share with the people in your life.</p>
+    </div>
+    <div class="form">
+        <div class="name">
+            <input type="text" placeholder="First Name" class="first" id="first_name">
+            <input type="text" placeholder="Last Name" class="last" id="last_name">
         </div>
-        <div class="form">
-            <div class="name">
-                <input type="text" placeholder="First Name" class="first">
-                <input type="text" placeholder="Last Name" class="last">
-    
-            </div>
-            <input type="username" placeholder="Username" class="first">
-            <input type="text" placeholder="Phone" class="last">
-    
-            <input type="text" placeholder="Email" class="input">
-            <input type="password" placeholder="Password" class="first">
-            <input type="text" placeholder="Repeat Password" class="last">
-    
-            <label class="label">Date of birth: </label><input type="date" class="last">
-               
-            <div class="gen">
-                <label class="label"  id="gen">Gender: </label>
-                <input type="radio" id="male" name="gender" value="male" class="radio">
-                <label for="male">Male</label>
-                <input type="radio" id="female" name="gender" value="female" class="radio">
-                <label for="female">Female</label>
-            </div>
-                
+        <input type="username" placeholder="Username" class="first" id="username">
+        <input type="text" placeholder="Phone" class="last" id="phone">
+
+        <input type="text" placeholder="Email" class="input" id="email">
+        <input type="password" placeholder="Password" class="first" id="password">
+        <input type="password" placeholder="Repeat Password" class="last" id="password_repeat">
+
+        <label class="label">Date of birth: </label><input type="date" class="last" id="dob">
+           
+        <div class="gen">
+            <label class="label"  id="gen">Gender: </label>
+            <input type="radio" id="male" name="gender" value="male" class="radio">
+            <label for="male">Male</label>
+            <input type="radio" id="female" name="gender" value="female" class="radio">
+            <label for="female">Female</label>
+        </div>
+        <div id="alert" class="hidden">
             
-    
-    
-            <input type="submit" value="Create New Account" class="login-btn"><br>
-            <div class="no">
-    
-                <p class="no-account">Already Have An Account?</p>
-            </div>
-    
-            <div class="ca">
-    
-                <a href="index.html" class="create-btn">Log In</a>
-            </div>
+        </div>
+        <button class="login-btn" id="sign_up_btn">Create New Account</button><br>
+        <div class="no">
+            <p class="no-account">Already Have An Account?</p>
+        </div>
+
+        <div class="ca">
+
+            <a href="index.html" class="create-btn">Log In</a>
         </div>
     </div>
-    
+    <script src="Scripts/sign_up.js"></script>
 </body>
 
 </html>
