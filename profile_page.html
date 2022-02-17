@@ -85,17 +85,17 @@
             <div class="bio-text">
                 <div class="bio-icons">
                     <span class="material-icons"> school </span>
-                    <label class="school">Graduated from </label>
+                    <label class="school">Graduated from <span id="education"></span> </label>
                 </div>
 
                 <div class="bio-icons">
                     <span class="material-icons"> work </span>
-                    <label class="work">Worked at</label>
+                    <label class="work">Worked at <span id="work"></span></label>
                 </div>
 
                 <div class="bio-icons">
-                    <span class="material-icons"> location_on </span>
-                    <label class="location">Lives in</label>
+                    <span class="material-icons" > location_on </span>
+                    <label class="location">Lives in <span id="location"></span></label>
                 </div>
 
 
@@ -108,13 +108,13 @@
                 <div class="panel">
                     <span class="material-icons"> supervised_user_circle </span>
                     <br />
-                    <label>42</label>
+                    <label id="friends-count">42</label>
                 </div>
 
                 <div class="panel">
                     <span class="material-icons"> library_books </span>
                     <br />
-                    <label>posts</label>
+                    <label id="count-posts">posts</label>
                 </div>
 
                 <div class="panel">
@@ -123,7 +123,7 @@
                     <label>favorites</label>
                 </div>
             </div>
-            <div class="profile-posts-div">
+            <div class="profile-posts-div" id="profile-posts-div">
                 <div class="post">
                     <div class="post-top">
                         <div class="dp">
@@ -160,32 +160,10 @@
         </div>
         <div class="friends-col" style="text-align: center;">
             <h2>Friends</h2>
-            <div class="friends-section">
-                <div>
-                    <img src="images/profile pic.jpg" class="profile-pic" />
-                </div>
-                <div>
-                    Friend One
-                </div>
+            <div id="friends-panel-fetched">
+                
             </div>
-
-            <div class="friends-section">
-                <div>
-                    <img src="images/profile pic.jpg" class="profile-pic" />
-                </div>
-                <div>
-                    Friend One
-                </div>
-            </div>
-
-            <div class="friends-section">
-                <div>
-                    <img src="images/profile pic.jpg" class="profile-pic" />
-                </div>
-                <div>
-                    Friend One
-                </div>
-            </div>
+           
             <!-- The Modal -->
             <div id="myModal" class="modal">
 
@@ -196,13 +174,14 @@
                         <h2 id="modal-header-text">All friends</h2>
                     </div>
                     <div class="modal-body" id="modal-body">
-                        <table class="friends-table">
-                            <tr>
+                        <table class="friends-table" id="friends-table">
+                            
                                 <td style="width: 100px;"><img src="images/profile pic.jpg" class="profile-pic"></td>
                                 <td><strong>User 1</strong></td>
-                                <td style="text-align: right;"><label class="unblock">remove friend</label><i
-                                        class="fas fa-user-times"></i></td>
-                            </tr>
+                                <td style="text-align: right;"><button id="remove-friend" style="padding: 5px"><label class="unblock">remove friend</label><i
+                                    class="fas fa-user-times"></i></button>
+                                    </td>
+                            </tr> 
 
                         </table>
 
